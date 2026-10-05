@@ -59,7 +59,7 @@ Contributions are welcome! Please feel free to open a Pull Request to add or upd
 
 Below is a curated collection of production-grade open-source tools, detection rule repositories, and assessment frameworks for identity security.
 
-| Project Name | Description | Stars |
+| Project Name | Description | GitHub_Stars |
 | :--- | :--- | :--- |
 | **[PowerSploit](https://github.com/PowerShellMafia/PowerSploit)** ⚡ | Collection of Microsoft PowerShell modules for post-exploitation and Active Directory identity privilege testing. | [![Stars](https://img.shields.io/github/stars/PowerShellMafia/PowerSploit?style=social&color=white)](https://github.com/PowerShellMafia/PowerSploit/stargazers) |
 | **[Impacket](https://github.com/fortra/impacket)** 🐍 | Collection of Python classes for working with network protocols (Kerberos, NTLM, LDAP) essential for ITDR testing. | [![Stars](https://img.shields.io/github/stars/fortra/impacket?style=social&color=white)](https://github.com/fortra/impacket/stargazers) |
@@ -124,3 +124,12 @@ If you found this curated ITDR ecosystem list helpful, please consider starring 
 ---
 
 **Made with ❤️ for identity security teams, blue teams, and open security tooling advocates.**
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Identity-Threat-Detection-And-Response-ITDR&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Identity-Threat-Detection-And-Response-ITDR_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Identity-Threat-Detection-And-Response-ITDR_growth.svg">
+  </picture>
+</a>
