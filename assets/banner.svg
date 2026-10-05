@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .title {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        fill: url(#text-grad);
+      }
+      .subtitle {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #94a3b8;
+      }
+      .node {
+        animation: pulse 3s infinite alternate;
+      }
+      .pulse-ring {
+        animation: ring 4s infinite linear;
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.7; }
+        100% { transform: scale(1.05); opacity: 1; }
+      }
+      @keyframes ring {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 100; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+
+  <!-- Background Dynamic Network Graphic Elements (Behind Text) -->
+  <g opacity="0.25">
+    <!-- Grid pattern -->
+    <path d="M0 80 H1200 M0 160 H1200 M0 240 H1200 M200 0 V320 M400 0 V320 M600 0 V320 M800 0 V320 M1000 0 V320" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,8"/>
+    
+    <!-- Connection lines -->
+    <path d="M150 220 L300 100 L500 240 L700 80 L900 200 L1050 120" stroke="#818cf8" stroke-width="2" fill="none"/>
+    <path d="M200 80 L400 200 L650 120 L850 250" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6,6" fill="none"/>
+
+    <!-- Animated Nodes -->
+    <circle cx="150" cy="220" r="6" fill="#38bdf8"/>
+    <circle cx="300" cy="100" r="8" fill="#818cf8"/>
+    <circle cx="500" cy="240" r="5" fill="#c084fc"/>
+    <circle cx="700" cy="80" r="9" fill="#38bdf8"/>
+    <circle cx="900" cy="200" r="7" fill="#818cf8"/>
+    <circle cx="1050" cy="120" r="6" fill="#38bdf8"/>
+  </g>
+
+  <!-- Shield Icon Graphic -->
+  <g transform="translate(80, 80)">
+    <path d="M 40 0 L 80 20 V 60 C 40 100 40 100 40 100 C 40 100 40 100 0 60 V 20 Z" fill="none" stroke="url(#text-grad)" stroke-width="4" filter="url(#glow)"/>
+    <path d="M 40 20 L 55 45 L 30 55 L 45 80" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <g transform="translate(190, 125)">
+    <text x="0" y="0" class="title">Identity Threat Detection &amp; Response (ITDR)</text>
+    <text x="0" y="38" class="subtitle">Awesome Curated Ecosystem of Enterprise SaaS &amp; Open-Source Security Tools</text>
+    <text x="0" y="70" font-family="system-ui, sans-serif" font-size="14" fill="#38bdf8" font-weight="600">🛡️ Active Directory • Entra ID • Credential Protection • Privilege Escalation • Deception</text>
+  </g>
+</svg>
